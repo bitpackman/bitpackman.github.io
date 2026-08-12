@@ -54,6 +54,8 @@ a { color: inherit; }
 
 .card:hover { border-color: #bbb; }
 
+.card + .card { margin-top: 16px; }
+
 .card img {
   width: 72px;
   height: 72px;
