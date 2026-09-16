@@ -18,9 +18,9 @@
 <p>PlainWalk (the &ldquo;App&rdquo;) is designed with your privacy as the first priority.</p>
 
 <h2>Information We Collect</h2>
-<p><strong>The App never sends your walking records to the developer&rsquo;s servers.</strong></p>
+<p><strong>The App never sends your walking records to the developer&rsquo;s servers.</strong> The one exception is Shared maps, and only the walks you put on a map yourself (see below).</p>
 <ul>
-  <li><strong>Location</strong>: Used to draw the roads you have walked onto your blank map. Your location data is stored on your device and is never transmitted to the developer. Only if you turn on &ldquo;Back up to iCloud&rdquo; yourself is a copy also stored in your own iCloud (see below).</li>
+  <li><strong>Location</strong>: Used to draw the roads you have walked onto your blank map. Your location data is stored on your device and is never transmitted to the developer, except the walks you yourself put on a shared map (see below). Only if you turn on &ldquo;Back up to iCloud&rdquo; yourself is a copy also stored in your own iCloud (see below).</li>
   <li><strong>Motion data (step count)</strong>: The device&rsquo;s motion sensor is used to display your step count for today. This data is also processed only on your device.</li>
   <li><strong>Photos</strong>: Photos taken with the Spot feature are stored on your device. As with location, a copy is stored in your own iCloud only when iCloud backup is turned on.</li>
 </ul>
@@ -39,21 +39,30 @@
 <p>Turning on &ldquo;Profile &gt; Backup&rdquo; stores a copy of your walks and photos in <strong>your own iCloud</strong>. No developer server is involved, and the developer cannot access the contents. It is off by default; unless you turn it on, your records never leave your device.</p>
 <p>When you turn it off, you can choose whether to keep or delete the copy already in iCloud.</p>
 
+<h2>Shared Maps</h2>
+<p>When you make a shared map under Profile &gt; Collection &gt; Shared maps, or join one from an invitation link, the walks you put on that map are stored on the developer&rsquo;s server (hosted on Cloudflare) and shown to the people on the same map.</p>
+<ul>
+  <li>Only what you put on a map is sent: a thinned track (a list of coordinates), the start and end time, and the distance of that walk. Photos, saved places, step counts and any other records are never sent.</li>
+  <li>No account is created. The App generates a random identifier for your device to tie your walks to the map. A display name is optional; if you enter one, the people on the same map see it.</li>
+  <li>Taking a walk off a map deletes it from the server. Leaving a map deletes all of your walks on it, and when the person who made the map closes it, everything on it is deleted.</li>
+  <li>Only the people who joined a map can see it. Nothing is public. Anyone who opens the invitation link can join, so share the link only with people you want on the map.</li>
+</ul>
+
 <h2>Where Your Data Is Stored</h2>
-<p>All records (trails, pioneered distance, step counts, photos) are stored on your iPhone. There is no developer server, and no account registration is required.</p>
+<p>All records (trails, pioneered distance, step counts, photos) are stored on your iPhone. No account registration is required. The only thing the developer&rsquo;s server receives is the walks you yourself put on a shared map (see above).</p>
 
 <h2>Sharing With Third Parties</h2>
-<p>Your walking records and location data are never shared with third parties. Google AdMob is used solely to deliver advertising (see above). No analytics SDKs are used.</p>
+<p>Your walking records and location data are never shared with third parties. Google AdMob is used solely to deliver advertising (see above). The Shared maps server runs on infrastructure provided by Cloudflare, Inc., where the walks you put on a map are stored. No analytics SDKs are used.</p>
 
 <h2>Deleting Your Data</h2>
-<p>You can delete all records at any time from &ldquo;Profile &gt; Reset data&rdquo; inside the App (this deletes the iCloud copy as well). Deleting the App removes its data from your device; if you kept the iCloud copy, you can restore it when you reinstall.</p>
+<p>You can delete all records at any time from &ldquo;Profile &gt; Reset data&rdquo; inside the App (this deletes the iCloud copy as well). Walks you put on a shared map are deleted from the server when you take them off, leave the map, or the map is closed. Deleting the App removes its data from your device; if you kept the iCloud copy, you can restore it when you reinstall.</p>
 
 <h2>Permissions</h2>
 <ul>
-  <li><strong>Location (While Using the App)</strong>: Required to record your trail. Recording continues while the screen is off, but stops as soon as you end the recording.</li>
-  <li><strong>Motion &amp; Fitness</strong>: Used to display your step count.</li>
+  <li><strong>Location (While Using the App)</strong>: Required to record your trail. Recording continues while the screen is off, but stops as soon as you end the recording. Only if you choose &ldquo;Notify me&rdquo; or &ldquo;Record automatically&rdquo; under Profile &gt; When you start moving does the App ask for &ldquo;Always&rdquo; location access. It is needed so iOS can wake the App when you start moving, even while it is closed. With that setting off, the App works with &ldquo;While Using&rdquo; and never asks for &ldquo;Always&rdquo;. Your location still never leaves your device (except walks you put on a shared map yourself).</li>
+  <li><strong>Motion &amp; Fitness</strong>: Used to display your step count, and, if you turned on &ldquo;When you start moving&rdquo;, to notice that you have started moving.</li>
   <li><strong>Camera</strong>: Used to photograph a spot you like.</li>
-  <li><strong>Notifications</strong>: Used for the morning walk reminder and the weekly recap.</li>
+  <li><strong>Notifications</strong>: Used for the morning walk reminder, the weekly recap, and, if you turned on &ldquo;When you start moving&rdquo;, notices about starting and recording a walk.</li>
 </ul>
 <p>All permissions can be revoked at any time in iOS Settings.</p>
 
