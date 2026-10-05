@@ -13,7 +13,7 @@
 <a class="back" href="./">← PlainWalk</a>
 
 <h1>PlainWalk (Android) Privacy Policy</h1>
-<p class="policy-date">Last updated: September 30, 2026</p>
+<p class="policy-date">Last updated: October 6, 2026</p>
 
 <p>PlainWalk ("the app") is designed with your privacy first. This page covers the Android version. The iOS version is <a href="privacy.en.html">here</a>.</p>
 
@@ -22,10 +22,13 @@
 <ul>
   <li><strong>Location</strong>: used to draw the roads you walk onto your blank map. Location data is stored on your device and is never sent to the developer.</li>
   <li><strong>Steps (physical activity)</strong>: the device's step sensor is used to show the steps of a walk. This data is processed only on the device.</li>
+  <li><strong>Photos and short videos (Spots)</strong>: photos and one- or two-second videos taken with the app's camera (including sound, if you choose to record it) are stored only on your device. Cutting out stickers uses Google's ML Kit on the device; your photos are never sent anywhere.</li>
+  <li><strong>Health Connect data (only if you turn it on)</strong>: the app reads steps, heart rate, active calories burned, exercise sessions and their routes, to show today's steps and the details of a walk, and to draw workouts on your blank map. It only reads; it never writes to Health Connect. The data is processed only on your device and is never sent to the developer or third parties, nor used for advertising. The app's use of information received from Health Connect adheres to Google Play's Health Connect Permissions policy, including the Limited Use requirements.</li>
 </ul>
 
 <h2>Real-map view (Google Maps)</h2>
 <p>The screen that overlays your trail on the actual streets uses Google Maps (Google Maps Platform). While that screen is open, the area being shown and, if your location is shown, your current location are sent to Google in order to display the map. Google's handling follows the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. Nothing is sent to Google from the blank map screen.</p>
+<p>If you turn on Hold to the light in a timelapse, the area that was drawn is sent to Google to make the map image. If you search for a place when setting your home, work or other places, the text you type is sent to Android's address search (Google).</p>
 
 <h2>Backup</h2>
 <p>Android's automatic backup may store your walking records (including location data) in <strong>your own Google Account</strong> on Google Drive. This is an Android feature: no developer server is involved and the developer cannot access its contents. You can turn it off under Settings &gt; Google &gt; Backup on your device.</p>
@@ -34,16 +37,19 @@
 <p>All records (trails, pioneered distance, steps) are stored on your Android device. No account is required.</p>
 
 <h2>Third parties</h2>
-<p>Your walking records and location are never provided to third parties. Google Maps is used only to display the real-map view (see above). No advertising or analytics SDK is used.</p>
+<p>Your walking records and location are never provided to third parties. Google services are used only for the real-map view, Hold to the light and place search (see above). Sticker cut-outs (ML Kit) and noticing when you start moving use Google Play services features on the device (Google Play services may contact Google, for example to download models). No advertising or analytics SDK is used.</p>
 
 <h2>Deleting your data</h2>
 <p>You can delete all records at any time from Profile &gt; Reset data in the app. Uninstalling the app deletes the data on the device. A backup in your Google Account is deleted after a period of time according to Android's rules.</p>
 
 <h2>Permissions</h2>
 <ul>
-  <li><strong>Location (precise, while using the app)</strong>: required to record your trail. While recording, location continues to be collected after you turn off the screen (a notification shows that recording is in progress); when you stop recording, location collection stops too. "Allow all the time" is never requested.</li>
-  <li><strong>Physical activity</strong>: used to show steps.</li>
-  <li><strong>Notifications</strong>: used to show your distance while recording and to pause or end the recording.</li>
+  <li><strong>Location (precise)</strong>: required to record your trail. Normally the app asks only for "While using the app". While recording, location continues to be collected after you turn off the screen (a notification shows that recording is in progress); when you stop recording, location collection stops too. Only if you turn on PlainWalk Plus's Record automatically or Record from your places does the app ask for "Allow all the time", so that it can notice you have started moving, or have left one of your places, while the app is closed, and start recording. In that case too, location is stored only on your device.</li>
+  <li><strong>Physical activity</strong>: used to show steps, to tell walking, running, cycling and riding apart, and to notice when you start moving.</li>
+  <li><strong>Camera</strong>: used to take Spot photos and short videos.</li>
+  <li><strong>Microphone</strong>: used only when you choose to record sound with a short video.</li>
+  <li><strong>Health Connect</strong>: used to read the kinds of data above (only if you turn it on).</li>
+  <li><strong>Notifications</strong>: used to show your distance while recording, to pause or end the recording, and to tell you when you start moving.</li>
 </ul>
 <p>Any of these permissions can be revoked at any time in Android Settings.</p>
 
